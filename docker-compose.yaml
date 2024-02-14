@@ -6,5 +6,6 @@ services:
     environment:
       OPENAI_API_KEY: "your open ai key"
       APP_HOST: gpt-code-ui
+      WEB_PORT: 8000
     ports:
-      - "8080:8080"
+      - "8000:8000"

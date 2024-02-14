@@ -39,9 +39,9 @@ RUN source $NVM_DIR/nvm.sh && make build
 
 RUN python3 setup.py install
 
-EXPOSE 8080
+EXPOSE 8000
 ENV APP_HOST=
 
-ENTRYPOINT socat TCP-LISTEN:8080,fork,bind=${APP_HOST} TCP:127.0.0.1:8080 & gptcode
+ENTRYPOINT socat TCP-LISTEN:8000,fork,bind=${APP_HOST} TCP:127.0.0.1:8000 & gptcode
 
 

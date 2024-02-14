@@ -25,7 +25,7 @@ See [Releases](../../releases)
 * get `docker-compose.yml`
 * update `OPENAI_API_KEY` in this file
 * `docker compose up` from same dir
-* open `http://localhost:8080`
+* open `http://localhost:8000`
 
 ### Runtime options
 Environment variables to set for the specific service
